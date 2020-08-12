@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <meta http-equiv="X-UA-Compatible" content="ie-edge">
+    <title>Aula 06</title>
+
+    <style>
+        body{
+         background-color: rgb(105, 105, 173);
+         color: white;
+
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+
+       <h1> Hello world!</h1>
+       <p>This is my first code</p>
+    </div>
+
+    <script>
+        /* Neste exemplo mostro como era feita a conversão de sting para number
+        na forma antiga do Ecma, utilizando a declaração literal indicando onde solicita
+        um número inteiro ou real ( com virgula ou ponto flutuante). */
+
+       var n1 = Number.parseInt(window.prompt('Digite um número: ')) // Conversão de string para número inteiro.
+       var n2 = Number.parseFloat(window.prompt('digite outro número: ')) // Conversão de string para número com ponto flutuante.
+       var n3 = Number(window.prompt('Digite só mais um número, prometo: '))
+       
+       var soma = n1 + n2 + n3
+    alert(`A soma entre ${n1}, ${n2} e ${n3} é igual a ${soma}` )
+
+        // Formatação de números
+/*
+    n1.toFixed(2) // formatação das casas decimais, mostrando apenas 2 casas
+
+    n1.toFixed(2).replace('.', ',') // mostrando duas casas decimais e mudando ponto por virgula
+    n1 = 1567.6
+    n1.toLocaleString('pt-BR', {style: 'currency', currency: 'BRL'})
+    console.log(n1)
+    */
+
+    /*Obs: Para se converter um número para String
+    pode-se usar  n.toString ou String(meuValor) */
+
+    
+    /* Exemplificando template Strings
+
+    nome = 'Ronald'
+ 
+    idade = 31
+
+    nota =  4.3
+
+    `Eu ${nome} tenho ${idade} e tirei ${nota}, infelizmente`
+    */
+
+    </script>
+    
+</body>
+</html>
